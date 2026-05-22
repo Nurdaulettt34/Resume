@@ -20,13 +20,45 @@ body {
     color: white;
 }
 
+
+/*STYLES*/
 img {
     width: 100%;}
 a {
     text-decoration: none;
     color: white;
 }
+.description {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+.title{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.item_preTitle {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 300;
+}
+.item_title {
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 500;
+    margin: 0.8rem 0;
+}
+.item_subtitle {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
 
+
+/* Container */
 .container {
     max-width: 1000px;
     width: 90%;
@@ -58,7 +90,7 @@ a {
 .profile_containerIMG {
     max-width: 250px;
 }
-.profile_name_firstname {
+.profile_name_lastname {
     color: white;
     font-weight: 200;
     font-size: clamp(2rem, 8vw, 4rem);
@@ -66,7 +98,7 @@ a {
     display: block;
     margin-bottom: -0.8rem;
 }
-.profile_name_lastname {
+.profile_name_firstname {
     color: var(--primary-color);
     font-weight: 700;
     font-size: clamp(2.5rem, 15vw, 7rem);
@@ -77,4 +109,36 @@ a {
     font-weight: 400;
     font-size: 1.5rem;
     text-transform: uppercase;
+}
+.downloadBtn {
+    display: block;
+    text-decoration: underline;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+.downloadBtn:hover {
+    color: var(--primary-color);
+}
+@media only screen and (max-width: 768px) {
+    .profile_container {
+        flex-direction: column;
+    }
+}
+
+/* Expertise */
+.skill_list {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 2;
+}
+
+/* EDUCATION */
+.edu_item {
+    margin-top: 2rem;
+
+}
+
+/* certificates */
+.certification {
+    margin-top: 6rem;
 }
